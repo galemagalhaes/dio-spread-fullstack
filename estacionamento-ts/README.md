@@ -24,7 +24,7 @@ Este projeto é relativamente simples, porém, ter alguns conhecimentos prévios
 ### Setup
 É necessário ter instalados:
 - ***Node*** com o gerenciador de pacotes ***npm***, diponível [aqui](https://nodejs.org/en/)
-  - a versão do *node* neste projeto foi `v16.14.0`
+  - a versão do *node* usada neste projeto foi `v16.14.0`
 - editor de código ***VS Code*** disponível neste [link](https://code.visualstudio.com/)
 - ***TypeScript*** 
   - caso ainda não tenha instalado basta usar no terminal o comando `npm install -g typescript`
@@ -34,15 +34,19 @@ Este projeto é relativamente simples, porém, ter alguns conhecimentos prévios
 A primeira ação é criar um projeto *TypeScript*:
 - navegar até a pasta onde será construído o projeto
 - dentro da pasta, no terminal, usar o comando:
-`npx -p typescript tsc --init`
-Isso deve gerar um arquivo `tsconfig.json` que  especifica os arquivos raiz e as configurações de compilação necessárias para o projeto.
+
+
+  `npx -p typescript tsc --init`
+
+  Isso deve gerar um arquivo `tsconfig.json` que  especifica os arquivos raiz e as configurações de compilação necessárias para o projeto.
 
 #### Etapa 2
 Deve ser criada a estrutura *HTML* que será exibida no navegador
 - criar um documento `index.html` 
-- dentro do *index*, para criar uma estrutura básica de html pode-se usar o atalho:
+- dentro do *index*, para criar uma estrutura básica em html pode-se usar o atalho:
   - digita-se `!` e em seguida a tecla `tab`
-  Ou pode ser criado o arquivo manualmente
+
+    Ou pode ser criado o arquivo manualmente
 - criar os campos do formulário
   - 2 **inputs** que devem ter:
     -  *type*
@@ -72,19 +76,24 @@ Deve ser criado o arquivo *`script.ts`*, nele serão criadas as funções associ
 Neste arquivo haverá ainda uma função que será ativada pelo ***evento de click*** no botão e um ***alert*** para avisar ao usuário que os campos são de preenchimento obrigatório, caso ele tente salvar um registro vazio.
 
 Todo arquivo ***TypeScript*** precisa ser transpilado para gerar um arquivo ***JavaScript***, pois só esse será aceito pelo navegador. A transpilação nesse caso foi feita de forma manual, pode ser realizada a cada implementação de função com o comando:
+
 `npx -p typescript tsc`
 
 A data que é apresentada pelo objeto `Date`, nativo do *JavaScript*, possui um formato específico que contem dia da semana, dia do mês, hora, minuto, segundo, e fuso horário e para evitar o excesso de informações na tabela, a data foi editada para o formato ISO do tipo *string*
+
 ... `new Date().toISOString()`...
 
 #### Aparência
 Aplicação com 1 registro
+
 ![](img/layout_inicial.png)
 
 Registro sendo encerrado
-![](img/encerrando_app.png)
+
+![](img/encerrando_registro.png)
 
 Tentativa de salvar registro com campos vazios
+
 ![](img/campos_vazios.png)
 
 #### Outras informações
