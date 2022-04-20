@@ -1,6 +1,6 @@
 # Sistema para Estacionamento
 
-### O que é
+### Definição do projeto
 Um sistema para controle de acesso de um estacionamento, contendo campos para entrada de dados sobre os veículos estacionados e uma tabela para os dados já registrados.
 
 ### Como funciona
@@ -76,6 +76,16 @@ Todo arquivo ***TypeScript*** precisa ser transpilado para gerar um arquivo ***J
 
 A data que é apresentada pelo objeto `Date`, nativo do *JavaScript*, possui um formato específico que contem dia da semana, dia do mês, hora, minuto, segundo, e fuso horário e para evitar o excesso de informações na tabela, a data foi editada para o formato ISO do tipo *string*
 ... `new Date().toISOString()`...
+
+#### Aparência
+Aplicação com 1 registro
+![](img/layout_inicial.png)
+
+Registro sendo encerrado
+![](img/encerrando_app.png)
+
+Tentativa de salvar registro com campos vazios
+![](img/campos_vazios.png)
 
 #### Outras informações
 - objeto `Date` mais informações [aqui](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date)
