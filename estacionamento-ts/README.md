@@ -58,7 +58,7 @@ Deve ser criada a estrutura *HTML* que será exibida no navegador
   - 1 tabela que deve ter:
     - *thead* com 4 colunas
     - *tbody* com *id* 
-- colocar uma tag *`<script>`* que conterá na pasta source (src) o documento JavaScript que será gerado após a transpilação do documento TypeScript
+- colocar uma tag *`<script>`* que conterá o documento JavaScript que será gerado após a transpilação do documento TypeScript
 
 #### Etapa 3
 Deve ser criado o arquivo *`script.ts`*, nele serão criadas as funções associadas às ações que poderão ser realizadas pelo programa
